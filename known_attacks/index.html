@@ -768,6 +768,7 @@
     <span class="p">}</span>
 
     <span class="kd">function</span> <span class="n">releaseLock</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nb">require</span><span class="p">(</span><span class="nb">msg</span><span class="p">.</span><span class="nb">sender</span> <span class="o">==</span> <span class="n">lockHolder</span><span class="p">);</span>
         <span class="n">lockHolder</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="p">}</span>
 
